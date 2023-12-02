@@ -27,18 +27,18 @@ $conexion = mysqli_connect("localhost","root","","Oradores_textiles");
 
 // echo "probando conexión a db php";
 
-// if(mysqli_connect_errno()){
-//     echo "no se conectó por un error: " . mysqli_connect_errno();
-// }else{
-//     echo "se conectó de forma correcta";
-// }
+if(mysqli_connect_errno()){
+ echo "no se conectó por un error: " . mysqli_connect_errno();
+}else{
+    echo "se conectó de forma correcta";
+ }
 
 
 $consulta = mysqli_query($conexion,"SELECT * FROM Oradores ");
 
-echo "<pre>";
-var_dump(($consulta));
-echo "</pre>";
+// echo "<pre>";
+// var_dump(($consulta));
+// echo "</pre>";
 
 //funcion para probar una
 //$listado = mysqli_fetch_assoc($consulta);
